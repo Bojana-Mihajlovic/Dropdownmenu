@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Test menu </title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .menu {
+            display: block;
+            position: absolute;
+            width:100px;
+            height: 100%;
+            background-color: rgb(128, 169, 189);
+    
+        }
+        .menuitem {
+                height: 40px;
+                display: block;
+                text-align: center;
+                position: relative;
+                overflow: left;
+                cursor: pointer;
+        }
+        .menuitem:hover {
+            background-color: rgb(30, 90, 139);
+            color: aliceblue;
+        }
+        .dropdown { 
+            display: block;
+            background-color: rgb(128, 169, 189);
+            position: absolute;
+            left: 100px;
+            display: none;
+
+        }
+
+        .menuitem:hover .dropdown{
+            display: inline-block;
+            padding-top: 0px;
+        }
+        .dropdownitem { 
+            padding: 10px 30px 10px 30px;
+            white-space: nowrap;
+        }
+        .dropdownitem:hover {
+            background-color: rgb(30, 90, 139);
+            color: aliceblue;
+        }
+        .dropdownitem a {
+            color: aliceblue; 
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body> 
+    <div class="menu"> 
+        <div class="menuitem"> 
+            Menu 1
+            <div class="dropdown">
+                <div class="dropdownitem"> <a href="https://www.google.com/">Google </a> </div>
+                <div class="dropdownitem"> Dropdown item </div>
+                <div class="dropdownitem"> Dropdown item </div>
+            </div> 
+        </div>
+        <div class="menuitem"> 
+            Menu 2 
+            <div class="dropdown">
+                <div class="dropdownitem"> Dropdown item </div>
+                <div class="dropdownitem"> Dropdown item </div>    
+            </div> 
+            
+        </div>
+        <div class="menuitem"> 
+            Menu 3
+            <div class="dropdown">
+                <div class="dropdownitem"> Dropdown item </div>
+                <div class="dropdownitem"> Dropdown item </div>
+                <div class="dropdownitem"> Dropdown item </div>    
+                <div class="dropdownitem"> Dropdown item </div>
+            </div> 
+
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
