@@ -6,8 +6,21 @@
         body {
             margin: 0px;
         }
+
+        .traka { 
+            width: 50px;
+            position: absolute;
+            background-color: rgb(128, 169, 189);
+            height: 100%;
+
+        }
+
+        .traka:hover .menu {
+            display: inline-block;
+        }
+
         .menu {
-            display: block;
+            display: none;
             position: absolute;
             width:100px;
             height: 100%;
@@ -54,35 +67,35 @@
     </style>
 </head>
 <body> 
-    <div class="menu"> 
-        <div class="menuitem"> 
-            Menu 1
-            <div class="dropdown">
-                <div class="dropdownitem"> <a href="https://www.google.com/">Google </a> </div>
-                <div class="dropdownitem"> Dropdown item </div>
-                <div class="dropdownitem"> Dropdown item </div>
-            </div> 
+    <div class="traka">
+        <div class="menu"> 
+            <div class="menuitem"> 
+                Menu 1
+                <div class="dropdown">
+                    <div class="dropdownitem"> <a href="https://www.google.com/">Google </a> </div>
+                    <div class="dropdownitem"> Dropdown item </div>
+                    <div class="dropdownitem"> Dropdown item </div>
+                </div> 
+            </div>
+            <div class="menuitem"> 
+                Menu 2 
+                <div class="dropdown">
+                    <div class="dropdownitem"> Dropdown item </div>
+                    <div class="dropdownitem"> Dropdown item </div>    
+                </div> 
+                
+            </div>
+            <div class="menuitem"> 
+                Menu 3
+                <div class="dropdown">
+                    <div class="dropdownitem"> Dropdown item </div>
+                    <div class="dropdownitem"> Dropdown item </div>
+                    <div class="dropdownitem"> Dropdown item </div>    
+                    <div class="dropdownitem"> Dropdown item </div>
+                </div> 
+            </div>
         </div>
-        <div class="menuitem"> 
-            Menu 2 
-            <div class="dropdown">
-                <div class="dropdownitem"> Dropdown item </div>
-                <div class="dropdownitem"> Dropdown item </div>    
-            </div> 
-            
-        </div>
-        <div class="menuitem"> 
-            Menu 3
-            <div class="dropdown">
-                <div class="dropdownitem"> Dropdown item </div>
-                <div class="dropdownitem"> Dropdown item </div>
-                <div class="dropdownitem"> Dropdown item </div>    
-                <div class="dropdownitem"> Dropdown item </div>
-            </div> 
-
-        </div>
-    </div>
-
+    </div>  
     
 </body>
 
